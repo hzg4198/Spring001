@@ -11,7 +11,6 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -25,6 +24,7 @@ public class mybatisTest {
 
 	@Autowired
 	private AccountService accountService;
+
 	@Test
 	public void f1() throws IOException {
 		String resource = "mybatis-config.xml.bak";
@@ -60,5 +60,9 @@ public class mybatisTest {
 		for (Account allAccount : allAccounts) {
 			System.out.println(allAccount);
 		}
+	}
+
+	@Test
+	public void testBookService(){
 	}
 }

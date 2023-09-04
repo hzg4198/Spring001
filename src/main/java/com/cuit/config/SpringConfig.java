@@ -17,6 +17,7 @@ import java.io.InputStream;
 @PropertySource("classpath:jdbc.properties")
 @ComponentScan("com.cuit")
 @Import({JdbcConfig.class, MybatisConfig.class})
+@EnableAspectJAutoProxy
 public class SpringConfig {
 
 }
